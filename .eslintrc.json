@@ -1,3 +1,37 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals", 
+    "airbnb", 
+    "airbnb-typescript", 
+    "plugin:react/jsx-runtime",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      },
+      {
+        "usePrettierrc": true
+      }
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "react/function-component-definition": "off",
+    // "react/jsx-curly-spacing": ["error", {"when": "never", "allowMultiline": false}],
+    "react/require-default-props": "off",
+    "import/prefer-default-export": "off",
+    "max-len": ["error", { "code": 120 }],
+    "import/no-extraneous-dependencies": "off",
+    "no-underscore-dangle": "off",
+    "consistent-return": "off", // TODO: doublecheck
+    "jsx-a11y/anchor-is-valid": "off", // TODO: only while using nextjs
+    "react/prop-types": "off"
+  }
 }
