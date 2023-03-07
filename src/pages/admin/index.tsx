@@ -5,7 +5,7 @@ import CategoryOutlined from '@mui/icons-material/CategoryOutlined';
 import CreditCardOffOutlined from '@mui/icons-material/CreditCardOffOutlined';
 import DashboardOutlined from '@mui/icons-material/DashboardOutlined';
 import GroupOutlined from '@mui/icons-material/GroupOutlined';
-import AttachmoneyOutlined from '@mui/icons-material/AttachmoneyOutlined';
+import AttachMoneyOutlined from '@mui/icons-material/AttachMoneyOutlined';
 import ProductionQuantityLimitsOutlined from '@mui/icons-material/ProductionQuantityLimitsOutlined';
 import useSWR from 'swr';
 
@@ -68,7 +68,7 @@ const DashboardPage = () => {
         <SummaryTile
           title={paidOrders}
           subtitle="Ordenes pagadas"
-          icon={<AttachmoneyOutlined color="success" sx={{ fontSize: 40 }} />}
+          icon={<AttachMoneyOutlined color="success" sx={{ fontSize: 40 }} />}
         />
         <SummaryTile
           title={notPaidOrders}
